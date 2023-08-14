@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="#" alt="logo">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#">My List</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://juanpablodesigner.github.io/JustWatch/Movies">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://juanpablodesigner.github.io/JustWatch/Series/">Series</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://juanpablodesigner.github.io/JustWatch/Animes/">Animes</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://juanpablodesigner.github.io/JustWatch/YouTube/">YouTube</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://juanpablodesigner.github.io/JustWatch/Sobre/">Sobre</a>
+            </li>
+        </ul>
+        <div class="nav-account">
+            <img src="#" alt="profile">
+            <a href="#">
+                <h6>My Account</h6>
+            </a>
+        </div>
+    </nav>
+
+    <h1>JustWatch</h1>
+
+    <h2>MyList</h2>
+    
+    <ul class="watches">
+        <li class="card">
+            <a href="https://www.crunchyroll.com/series/GRWMGGQ86/tonikawa-over-the-moon-for-you">
+                <img src="public/images/tonikaku1.png" alt="Tonikaku Kawaii">
+                <div class="tooltip">EP 5</div>
+            </a>
+        </li>
+        <li class="card">
+            <a href="https://www.crunchyroll.com/watch/GN7UDVXP4/the-samurai-and-the-woman">
+                <img src="public/images/samuraiandwoman1.png" alt="Suicide Squad">
+                <div class="tooltip">EP 5 - 8:50</div>
+            </a>
+        </li>
+        <li class="card">
+            <a href="https://www.crunchyroll.com/watch/GJWU2VDDG/izuku-midoriya-and-tomura-shigaraki">
+                <img src="public/images/bokunohero1.png" alt="Boku no hero">
+                <div class="tooltip">EP 131</div>
+            </a>
+        </li>
+        <li class="card">
+            <a href="https://www.crunchyroll.com/series/G4PH0WXVJ/spy-x-family">
+                <img src="public/images/spyxfamily1.png" alt="SPY X FAMILY">
+                <div class="tooltip">Season 4</div>
+            </a>
+        </li>
+        <li class="card">
+            <a href="https://animesonline.cc/episodio/mo-dao-zu-shi-episodio-2/">
+                <img src="public/images/modaozushi1.png" alt="Mo Dao Zu Shi">
+                <div class="tooltip">EP 2</div>
+            </a>
+        </li>
+        <li class="card">
+            <a href="https://kaido.to/watch/urusei-yatsura-18160">
+                <img src="public/images/modaozushi1.png" alt="Urusei Yatsura 2022">
+                <div class="tooltip">EP 1</div>
+            </a>
+        </li>
+        <li class="card">
+            <a href="https://animesonline.cc/episodio/mo-dao-zu-shi-episodio-2/">
+                <img src="public/images/modaozushi1.png" alt="Mo Dao Zu Shi">
+                <div class="tooltip">EP 2</div>
+            </a>
+        </li>
+        <li class="card">
+            <a href="https://betteranime.cc/anime/oshi-no-ko">
+                <img src="public/images/oshinoko1.png" alt="Oshi No Ko">
+                <div class="tooltip">EP 1</div>
+            </a>
+        </li>
+    </ul>
+
+    <h2>Best Sites</h2>
+
+    <ul>
+        <li>
+            <a href="https://kaido.to/">
+                <div>Kaido - US</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://betteranime.cc">
+                <div>Better Anime - US</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://supremaciaotaku.com/">
+                <div>Supremacia Otaku - BR</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://betteranime.cc">
+                <div>Better Anime</div>
+            </a>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.courses').on('mousewheel', function(e) {
+          var scrollAmount = e.originalEvent.deltaY;
+          $(this).scrollLeft($(this).scrollLeft() - scrollAmount);
+          e.preventDefault();
+        });
+      });
+    </script>
+    
+    <script src="script.js"/>
+</body>
+</html>
