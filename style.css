@@ -13,24 +13,20 @@
 }
 
 :root {
-    --text-color: #0A1014;
-    --text-color-hover: #0A1014;
+    --text-color: white;
+    --text-color-hover: white;
     --stroke-color: rgba(207, 118, 104, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(207, 118, 104, 0.3);
     --highlight-color: rgba(207, 118, 104, 0.1);
     --switch-bg-url: url(#);
-    --bg-color: #1D1D1D;
+    color-scheme: dark;
 }
 
-.dark {
-    --text-color: white;
-    --text-color-hover: white;
-    --bg-color: #1C232B;
-}
-
-body {
-    background-color: var(--bg-color);
+.light {
+    --text-color: #0A1014;
+    --text-color-hover: #0A1014;
+    color-scheme: light;
 }
 
 .navbar {
