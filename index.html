@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JustWatch</title>
-    <description>version 1.2.3</description>
+    <meta name="author" content="Juan Silva"/>
+    <meta name="description" content="version 1.3.2"/>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    
+    <link rel="icon" type="image/x-icon" href="./public/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="512x512" href="./public/favicon/logo512.png">
+    <link rel="icon" type="image/x-icon" sizes="192x192" href="./public/favicon/logo192.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="180x180" href="./public/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./public/favicon/site.webmanifest">
+
 </head>
 <body>
     <nav class="navbar">
-        <img src="#" alt="logo">
+        <a href="https://juanpablodesigner.github.io/JustWatch/#">
+            <img src="./public/favicon/logo.png" alt="logo">
+        </a>
         <ul class="nav-list">
             <li class="nav-item">
                 <a href="#">My List</a>
@@ -32,22 +50,25 @@
             </li>
         </ul>
         <div class="nav-account">
-            <img src="#" alt="profile">
+            <img src="./public/images/Profile/Ichika.png" alt="profile">
             <a href="#">
                 <h6>My Account</h6>
             </a>
         </div>
     </nav>
+    <div class="SectionHeader">
+        <h1>JustWatch</h1>
+    </div>
 
-    <h1>JustWatch</h1>
-
-    <h2>MyList</h2>
+    <div class="ListHeader">
+        <h2>MyList</h2>
+    </div>
     
-    <ul class="watches">
+    <ul class="cards-row">
         <li class="card">
-            <a href="https://kaido.to/watch/tenpuru-no-one-can-live-on-loneliness-18473?ep=104659">
+            <a href="https://kaido.to/watch/tenpuru-no-one-can-live-on-loneliness-18473?ep=105853">
                 <img src="public/images/TenPuru/TenPuru (1).jpg" alt="TenPuru: No One Can Live on Loneliness">
-                <div class="tooltip">EP 5</div>
+                <div class="tooltip">EP 7</div>
             </a>
         </li>
         <li class="card">
@@ -92,55 +113,73 @@
                 <div class="tooltip">EP 1</div>
             </a>
         </li>
+        <li class="card">
+            <a href="https://kaido.to/watch/love-flops-uncensored-18311?ep=96924">
+                <img src="public/images/Oshi No Ko/Oshi No Ko (1).png" alt="Love Flops">
+                <div class="tooltip">EP 1</div>
+            </a>
+        </li>
     </ul>
 
-    <h2>Best Sites</h2>
+    <div class="ListHeader">
+        <h2>Best Sites</h2>
+    </div>
 
-    <ul>
-        <li>
+    <ul class="tags-row">
+        <li class="tag">
             <a href="https://kaido.to/">
-                <div>Kaido - US (1080p)</div>
+                <img src="public/images/Best Sites/kaido.png" alt="Kaido">
+                <div class="tooltip">Kaido - US (1080p)</div>
             </a>
         </li>
-        <li>
+        <li class="tag">
             <a href="https://betteranime.cc">
-                <div>Better Anime - US (1080p)</div>
+                <img src="public/images/Best Sites/#.png" alt="Better Anime">
+                <div class="tooltip">Better Anime - US (1080p)</div>
             </a>
         </li>
-        <li>
+        <li class="tag">
             <a href="https://www.crunchyroll.com/">
-                <div>Crunchyroll - BR/US (1080p)</div>
+                <img src="public/images/Best Sites/#.png" alt="Crunchyroll">
+                <div class="tooltip">Crunchyroll - BR/US (1080p)</div>
             </a>
         </li>
-        <li>
+        <li class="tag">
             <a href="https://animesonlinecc.to/">
-                <div>Animes Online - BR (720p)</div>
+                <img src="public/images/Best Sites/#.png" alt="Animes Online">
+                <div class="tooltip">Animes Online - BR (720p)</div>
             </a>
         </li>
     </ul>
 
+    <div class="ListHeader">
+        <h2>Watched Again</h2>
+    </div>
 
-    <h2>Watched</h2>
-
-    <ul>
-        <li>
+    <ul class="cards-row">
+        <li class="card">
             <a href="https://animesonlinecc.to/anime/megami-ryou-no-ryoubo-kun/">
-                <div>Megami-ryou no Ryoubo-kun</div>
+                <img src="public/images/Best Sites/#.png" alt="megami-ryou no Ryoubo-kun">
+                <div class="tooltip">Megami-ryou no Ryoubo-kun</div>
             </a>
         </li>
     </ul>
 
-    <h3>Rest in Peace F</h3>
+    <div class="ListHeader">
+        <h3>Rest in Peace F</h3>
+    </div>
 
-    <ul>
-        <li>
+    <ul class="tags-row">
+        <li class="tag">
             <a href="https://animesonline.cc/">
-                <div>Animes Online - BR (720p)</div>
+                <img src="public/images/Dead Sites/#.png" alt="Animes Online">
+                <div class="tooltip">Animes Online - BR (720p)</div>
             </a>
         </li>
-        <li>
+        <li class="tag">
             <a href="https://supremaciaotaku.com/">
-                <div>Supremacia Otaku - BR (720p)</div>
+                <img src="public/images/Best Sites/#.png" alt="Supremacia Otaku">
+                <div class="tooltip">Supremacia Otaku - BR (720p)</div>
             </a>
         </li>
     </ul>
