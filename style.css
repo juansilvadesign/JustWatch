@@ -132,7 +132,8 @@ a {
     align-items: flex-start;
     padding: 1rem 4rem;
     gap: 2rem;
-    overflow-x: hidden;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
 /* Hide the scrollbar for Webkit-based browsers 
@@ -182,15 +183,24 @@ a {
     display: block;
   }
 
-
+/*
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem, 1rem;
+    scroll-snap-align: start;
+}
+*/
 .tags-row {
-    display: inline-flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
     width: 100%;
     height: 15rem;
     align-items: flex-start;
     padding: 1rem 4rem;
     gap: 2rem;
-    overflow-x: hidden;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 .tag {
     width: 11.875rem;
@@ -198,8 +208,8 @@ a {
 }
 
 .tag img {
-    width: 10rem;
-    align-self: auto;
+    inline-size: 100%;
+    object-fit: cover;
 }
 
 .tag:hover {
@@ -308,3 +318,10 @@ a {
 }
 
 */
+
+.crunch-logo {
+    fill: #f47521;
+    display: block;
+    height: inherit;
+    transition: fill .2s ease;
+}
