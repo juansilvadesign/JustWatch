@@ -128,12 +128,14 @@ a {
 .cards-row {
     display: inline-flex;
     width: 100%;
-    height: 25rem;
+    height: auto;
     align-items: flex-start;
-    padding: 1rem 4rem;
+    padding: 0rem 3.5rem;
     gap: 2rem;
+    /*
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    */
 }
 
 /* Hide the scrollbar for Webkit-based browsers 
@@ -149,21 +151,106 @@ a {
     background-color: transparent;
 }
   */
-  
+    
+#cardtenp {
+    width: 14.375rem;
+    height: 20.625rem;
+    flex-shrink: 0;
+    background-image: url(./public/images/TenPuru/Card1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cardton {
+    width: 14.375rem;
+    height: 20.625rem;
+    flex-shrink: 0;
+    background-image: url(./public/images/Tonikaku/Card1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#cardspy {
+    width: 14.375rem;
+    height: 20.625rem;
+    flex-shrink: 0;
+    background-image: url(./public/images/SpyxFamily/Card1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*
 .card {
-    width: 11.875rem;
-    height: 20rem;
+    
+    width: 14.375rem;
+    height: 20.625rem;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+.card-header {
+    opacity: 0%;
+    display: flex;
+    width: 14.375rem;
+    height: 20.625rem;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    top: 17.8125rem;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+.card-header:hover {
+    opacity: 100%;
+}
+
+.card-header h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: stretch;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+}
+
+.card-ep, .card-current {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .card img {
-    width: 10rem;
+    width: 100%;
     align-self: auto;
+    
 }
-
+/*
 .card:hover {
     border: 1px solid var(--border-color);
 }
-
+*/
 
 .tooltip {
     display: none;
