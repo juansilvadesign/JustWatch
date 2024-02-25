@@ -377,5 +377,14 @@
     </script>
     <script src="script.js"></script>
     <script src="card.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.tags-row').on('mousewheel', function(e) {
+          var scrollAmount = e.originalEvent.deltaY;
+          $(this).scrollLeft($(this).scrollLeft() - scrollAmount);
+          e.preventDefault();
+        });
+      });
+    </script>
 </body>
 </html>
