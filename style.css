@@ -130,8 +130,10 @@ a {
     width: 100%;
     height: auto;
     align-items: flex-start;
-    padding: 0rem 3.5rem;
+    padding: 0.5rem 3.5rem;
+    margin-bottom: 1.5rem;
     gap: 2rem;
+    overflow-x: hidden;
     /*
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -151,33 +153,34 @@ a {
     background-color: transparent;
 }
   */
-    
-#cardtenp {
+
+.smooth-transition {
+    transition: background-image 2s ease;
+}
+
+.card-style {
     width: 14.375rem;
     height: 20.625rem;
     flex-shrink: 0;
-    background-image: url(./public/images/TenPuru/Card1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+#cardtenp {
+    background-image: url(./public/images/TenPuru/Card1.png);
+}
 #cardton {
-    width: 14.375rem;
-    height: 20.625rem;
-    flex-shrink: 0;
     background-image: url(./public/images/Tonikaku/Card1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 #cardspy {
-    width: 14.375rem;
-    height: 20.625rem;
-    flex-shrink: 0;
     background-image: url(./public/images/SpyxFamily/Card1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+#cardhell {
+    background-image: url(./public/images/HellsParadise/Card1.png);
+}
+#cardhero {
+    background-image: url(./public/images/BokunoHero/Card1.png);
 }
 /*
 .card {
